@@ -1,0 +1,22 @@
+body {
+    background-color: #f4f6f9;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+    .card:hover {
+        transform: scale(1.03);
+        transition: 0.3s;
+    }
+
+.table {
+    background-color: white;
+}
+
+h1 {
+    font-weight: bold;
+}
+    

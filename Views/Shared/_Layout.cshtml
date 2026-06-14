@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>AI Virtual Campus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="~/css/adminlte.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+
+    <div class="app-wrapper">
+
+        <nav class="app-header navbar navbar-expand bg-body">
+            <div class="container-fluid">
+                <h5 class="mb-0">AI Virtual Campus Management System</h5>
+            </div>
+        </nav>
+
+        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+            <div class="sidebar-brand">
+                <a href="/" class="brand-link">
+                    <span class="brand-text fw-light">Virtual Campus</span>
+                </a>
+            </div>
+
+            <div class="sidebar-wrapper">
+                <nav class="mt-2">
+                    <ul class="nav sidebar-menu flex-column" role="menu">
+
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/Department" class="nav-link">
+                                <p>Departments</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/Notice" class="nav-link">
+                                <p>Notices</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/Event" class="nav-link">
+                                <p>Events</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/Feedback" class="nav-link">
+                                <p>Feedback</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="app-main">
+            <div class="app-content p-4">
+                @RenderBody()
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <strong>© 2026 AI Virtual Campus</strong>
+        </footer>
+
+    </div>
+
+    <script src="~/js/adminlte.js"></script>
+    <script src="~/js/site.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
